@@ -157,8 +157,10 @@ function ProjectListing() {
             w={"100%"}
             boxShadow={"rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"}
             mb={"30px"}
-            p={"10px 10px"}
+            p={"10px 15px"}
             bg={"#fff"}
+            borderRadius={"10px"}
+            borderBottom={"6px solid #d7d7d7"}
           >
             <Box
               display={"flex"}
@@ -169,7 +171,7 @@ function ProjectListing() {
                 md: "row",
                 lg: "row",
               }}
-              gap={"30px"}
+              gap={"18px"}
               w={"100%"}
               bg={"#fff"}
             >
@@ -198,12 +200,18 @@ function ProjectListing() {
                   <Box
                     display={"flex"}
                     justifyContent={"flex-start"}
-                    gap={"5px"}
+                    gap={"10px"}
                     alignItems={"center"}
                     bg={"#fff"}
                   >
-                    <CiHeart bg={"#fff"} />
-                    <CiShare2 bg={"#fff"} />
+                    <Box borderRadius={"50%"} p={"8px"} bg={"#f0f0f0"}>
+                      {" "}
+                      <CiHeart bg={"#fff"} fontSize={"20px"} color="#4f4f4f" />
+                    </Box>
+                    <Box borderRadius={"50%"} p={"8px"} bg={"#f0f0f0"}>
+                      {" "}
+                      <CiShare2 bg={"#fff"} fontSize={"20px"} color="#4f4f4f" />
+                    </Box>
                   </Box>
                 </Box>
                 <Box mt={"5px"} bg={"#fff"}>
@@ -230,6 +238,7 @@ function ProjectListing() {
                     gap={"20px"}
                     p={"10px 3px"}
                     bg={"#fff"}
+                    borderRadius={"10px"}
                   >
                     <Box borderRadius={"50%"} p={"10px"} bg={"#e8f4ff"}>
                       <HiOutlineBuildingOffice2 fontSize={"25px"} />
@@ -251,6 +260,7 @@ function ProjectListing() {
                     gap={"20px"}
                     p={"10px 3px"}
                     bg={"#fff"}
+                    borderRadius={"10px"}
                   >
                     <Box bg={"#d1f4ef"} borderRadius={"50%"} p={"10px"}>
                       <LiaBuilding fontSize={"25px"} />
@@ -292,6 +302,7 @@ function ProjectListing() {
               justifyContent={"flex-start"}
               alignItems={"center"}
               bg={"#fff"}
+              mt={"10px"}
             >
               <Text
                 color={"#666666"}

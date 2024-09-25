@@ -10,9 +10,7 @@ function Projects() {
   return (
     <>
       <Container maxW="container.2xl" bg={"#f7f7f7"}>
-        {/* First heading */}
-
-        <Container maxW="container.xl">
+        <Container maxW="container.xl" p={"0px"}>
           <Box
             display={{ lg: "flex", md: "flex", sm: "none", base: "none" }}
             fontSize={"12px"}
@@ -40,6 +38,7 @@ function Projects() {
                     lg: "block",
                     md: "block",
                   }}
+                  color={"#424242"}
                 >
                   New Projects in Guwahati
                 </Heading>
@@ -50,11 +49,10 @@ function Projects() {
                   mt={"5px"}
                   w={{ base: "100%" }}
                 >
-                  <Text>Showing 51 Projects</Text>
-                  <Text>Last Updated: Nov 28, 2023</Text>
+                  <Text color={"#424242"}>Showing 51 Projects</Text>
+                  <Text color={"#424242"}>Last Updated: Nov 28, 2023</Text>
                 </Box>
 
-                {/* Projects and Resale button  */}
                 <Box
                   mt={"20px"}
                   display={{ base: "flex", sm: "flex" }}
@@ -91,7 +89,6 @@ function Projects() {
                 </Box>
               </Box>
 
-              {/* Category buttons  */}
               <Box
                 display={"flex"}
                 justifyContent={"space-between"}
@@ -108,10 +105,10 @@ function Projects() {
                     background={"transparent"}
                     border={
                       selectButton === "all"
-                        ? "1px solid green"
+                        ? "1px solid #58bf93"
                         : "1px solid #e2e2e2"
                     }
-                    _hover={{ border: "2px solid green" }}
+                    _hover={{ border: "1px solid #58bf93" }}
                     onClick={() => setSelectButton("all")}
                     fontSize={"12px"}
                     color={"#666666"}
@@ -119,16 +116,15 @@ function Projects() {
                     All
                   </Button>
 
-                  {/* Other buttons */}
                   <Box>
                     <Button
                       background={"transparent"}
                       border={
                         selectButton === "ready"
-                          ? "1px solid green"
+                          ? "1px solid #58bf93"
                           : "1px solid #e2e2e2"
                       }
-                      _hover={{ border: "2px solid green" }}
+                      _hover={{ border: "1px solid #58bf93" }}
                       onClick={() => setSelectButton("ready")}
                       fontSize={"12px"}
                       color={"#666666"}
@@ -142,10 +138,10 @@ function Projects() {
                       background={"transparent"}
                       border={
                         selectButton === "affordable"
-                          ? "1px solid green"
+                          ? "1px solid #58bf93"
                           : "1px solid #e2e2e2"
                       }
-                      _hover={{ border: "2px solid green" }}
+                      _hover={{ border: ".5px solid #58bf93" }}
                       onClick={() => setSelectButton("affordable")}
                       fontSize={"12px"}
                       color={"#666666"}
@@ -167,16 +163,18 @@ function Projects() {
                 </Box>
               </Box>
 
-              {/* Importing ProjectListing Component  */}
               <Box mt={"20px"} w={"100%"}>
                 <ProjectListing />
               </Box>
             </Box>
 
-            {/* Importing Contact Components  */}
+            {/* Contact component - Sticky */}
             <Box
-              w={"40%"}
+              w={{ lg: "40%" }}
               position={"sticky"}
+              top={"0px"}
+              h={"fit-content"} // Ensure the component doesn't overflow
+              overflow={"visible"} // Make sure there is no overflow constraint
               display={{ sm: "none", base: "none", md: "none", lg: "block" }}
             >
               <Contact />

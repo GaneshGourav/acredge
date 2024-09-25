@@ -18,7 +18,7 @@ function Contact() {
   return (
     <>
       <Container maxW="container.xl" textAlign={"left"} p={"0px"}>
-        <Box >
+        <Box>
           <Heading fontSize={"14px"} color={"#333333"}>
             Shortlisted Projects
           </Heading>
@@ -71,7 +71,7 @@ function Contact() {
             "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
           }
           borderRadius={"5px"}
-          p={"20px"}
+          p={"15px 20px"}
           bg={"#fff"}
           mt={"30px"}
         >
@@ -82,14 +82,17 @@ function Contact() {
             alignItems={"center"}
             alignContent={"center"}
             justifyContent={"flex-start"}
-            p={"5px"}
+            p={"10px 0px"}
             gap={"10px"}
             bg={"#fff"}
+            // border={"1px solid red"}
           >
-            <Box border={"2px solid #59be92"} borderRadius={"50%"} p={"5px"}>
-              <IoCall color="#59be92" />
+            <Box border={"3px solid #59be92"} borderRadius={"50%"} p={"5px"}>
+              <IoCall color="#59be92" fontSize={"20px"} />
             </Box>
-            <Heading fontSize={"14px"}>Contact our Real Estate Experts</Heading>
+            <Heading fontSize={"17px"} color={"#333333"}>
+              Contact our Real Estate Experts
+            </Heading>
           </Box>
 
           {/* contact form  */}
@@ -98,8 +101,9 @@ function Contact() {
             boxShadow={
               "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
             }
-            p={"10px"}
+            p={"15px"}
             bg={"#fff"}
+            borderRadius={"5px"}
           >
             <Box bg={"#fff"}>
               <Stack spacing={4} bg={"#fff"}>

@@ -33,7 +33,7 @@ function NavSection() {
             display={"flex"}
             alignItems={"center"}
             border={"1px solid white"}
-            w={{ lg: "450px", md: "450px", sm: "350px", base: "320px" }}
+            w={{ lg: "450px", md: "450px", sm: "330px", base: "330px" }}
             _hover={{ border: "1px solid black", borderRadius: "8px" }}
             bg={"white"}
           >
@@ -41,7 +41,7 @@ function NavSection() {
             <Input
               type="text"
               placeholder="Search by Project, Locality, Builder, Road or Landmark"
-              w={{ lg: "450px", md: "450px", sm: "350px", base: "350px" }}
+              w={{ lg: "450px", md: "450px", sm: "330px", base: "330px" }}
               _hover={"none"}
               outline={"none"}
               border={"none"}
