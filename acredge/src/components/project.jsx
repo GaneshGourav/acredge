@@ -172,7 +172,7 @@ function Projects() {
             <Box
               w={{ lg: "40%" }}
               position={"sticky"}
-              top={"0px"}
+              top={"60px"}
               h={"fit-content"} // Ensure the component doesn't overflow
               overflow={"visible"} // Make sure there is no overflow constraint
               display={{ sm: "none", base: "none", md: "none", lg: "block" }}
