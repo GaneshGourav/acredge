@@ -7,63 +7,17 @@ import {
   InputGroup,
   InputLeftAddon,
   Stack,
-  Text,
 } from "@chakra-ui/react";
 
 import React from "react";
-import { CiHeart } from "react-icons/ci";
+
 import { IoCall } from "react-icons/io5";
 
 function Contact() {
   return (
     <>
-      <Container maxW="container.xl" textAlign={"left"} p={"0px"}>
-        <Box>
-          <Heading fontSize={"14px"} color={"#333333"}>
-            Shortlisted Projects
-          </Heading>
-        </Box>
-
-        {/* First part  */}
-        <Box
-          w={"350px"}
-          p={"10px"}
-          textAlign={"center"}
-          mt={"30px"}
-          boxShadow={
-            "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
-          }
-          borderRadius={"5px"}
-          bg={"#fff"}
-        >
-          <Heading
-            fontSize={"14px"}
-            textAlign={"center"}
-            bg={"#fff"}
-            color={"#333333"}
-          >
-            No Shortlisted Properties Yet!
-          </Heading>
-          <Box mt={"10px"} bg={"#fff"}>
-            <Text
-              display={"flex"}
-              alignItems={"center"}
-              alignContent={"center"}
-              justifyContent={"center"}
-              color={"#333333"}
-              bg={"#fff"}
-            >
-              Tap icon{" "}
-              <Text as="span" borderRadius={"50%"} bg={"#e7faf1"} p={"4px"}>
-                <CiHeart color="#58bf93" />
-              </Text>{" "}
-              to shortlist and see them here,
-            </Text>
-            <Text bg={"#fff"}>Then you’ll be able to compare them too</Text>
-          </Box>
-        </Box>
-
-        {/* 2nd Parts  */}
+      <Container maxW="container.xl" textAlign={"left"} p={"0px"} pb={"20px"}>
+        {/* 1st Parts  */}
 
         <Box
           w={"350px"}

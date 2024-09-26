@@ -384,6 +384,15 @@ function ProjectListing() {
           </Box>
         );
       })}
+
+      <Box display={"flex"} justifyContent={"center"} gap={"10px"}>
+        <Button border={"1px solid #58bf93"} bg={"#58bf93"} color={"#fff"}>
+          1
+        </Button>
+        <Button border={"1px solid #58bf93"} bg={"#fff"}>
+          2
+        </Button>
+      </Box>
     </Container>
   );
 }

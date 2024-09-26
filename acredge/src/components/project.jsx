@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import ProjectListing from "./ProjectListing";
 import Contact from "./Contact";
+import { CiHeart } from "react-icons/ci";
 
 function Projects() {
   const [selectedButton, setSelectedButton] = useState("projects");
@@ -171,13 +172,71 @@ function Projects() {
             {/* Contact component - Sticky */}
             <Box
               w={{ lg: "40%" }}
-              position={"sticky"}
-              top={"60px"}
-              h={"fit-content"} // Ensure the component doesn't overflow
-              overflow={"visible"} // Make sure there is no overflow constraint
+              // Make sure there is no overflow constraint
               display={{ sm: "none", base: "none", md: "none", lg: "block" }}
             >
-              <Contact />
+              <Box>
+                <Box>
+                  <Heading fontSize={"14px"} color={"#333333"}>
+                    Shortlisted Projects
+                  </Heading>
+                </Box>
+
+                {/* First part  */}
+                <Box
+                  w={"350px"}
+                  p={"10px"}
+                  textAlign={"center"}
+                  mt={"30px"}
+                  boxShadow={
+                    "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
+                  }
+                  borderRadius={"5px"}
+                  bg={"#fff"}
+                >
+                  <Heading
+                    fontSize={"14px"}
+                    textAlign={"center"}
+                    bg={"#fff"}
+                    color={"#333333"}
+                  >
+                    No Shortlisted Properties Yet!
+                  </Heading>
+                  <Box mt={"10px"} bg={"#fff"}>
+                    <Text
+                      display={"flex"}
+                      alignItems={"center"}
+                      alignContent={"center"}
+                      justifyContent={"center"}
+                      color={"#333333"}
+                      bg={"#fff"}
+                    >
+                      Tap icon{" "}
+                      <Text
+                        as="span"
+                        borderRadius={"50%"}
+                        bg={"#e7faf1"}
+                        p={"4px"}
+                      >
+                        <CiHeart color="#58bf93" />
+                      </Text>{" "}
+                      to shortlist and see them here,
+                    </Text>
+                    <Text bg={"#fff"}>
+                      Then you’ll be able to compare them too
+                    </Text>
+                  </Box>
+                </Box>
+              </Box>
+
+              <Box
+                position={"sticky"}
+                top={"70px"}
+                h={"fit-content"} // Ensure the component doesn't overflow
+                overflow={"visible"}
+              >
+                <Contact />
+              </Box>
             </Box>
           </Box>
         </Container>
